@@ -1,0 +1,59 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: $color-first;
+  background: $color-bgthird;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+input,
+textarea,
+fieldset,
+label {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.color-black {
+  color: $color-first;
+}
+
+.color-white {
+  color: $color-bgthird;
+}

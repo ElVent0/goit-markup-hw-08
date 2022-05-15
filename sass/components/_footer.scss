@@ -1,0 +1,172 @@
+.footer {
+  background-color: $color-bgsecond;
+  height: 252px;
+  padding-top: 60px;
+}
+
+.footer__logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $color-chosen;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.footer__address {
+  margin-top: 20px;
+}
+
+.footer__item {
+  margin-bottom: 9px;
+}
+
+.footer__item {
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $color-bgthird;
+  text-decoration: none;
+}
+
+.contacts.color {
+  color: $color-second;
+  &:hover,
+  &:focus {
+    color: $color-chosen;
+  }
+}
+
+.contacts.color-bottom {
+  color: $color-third;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $color-chosen;
+  }
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__addresses {
+  margin-right: 70px;
+}
+
+.footer__join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428;
+  text-transform: uppercase;
+  color: $color-bgthird;
+  margin-bottom: 20px;
+}
+
+.social__list_icon.footer__list_icon {
+  padding: 0;
+}
+
+.social__link_icon.footer__icon {
+  background-color: #ffffff1a;
+}
+
+.footer__icon.social__link_icon {
+  &:hover,
+  &:focus {
+    background-color: $color-chosen;
+  }
+}
+
+.social__link_icon {
+  &:focus,
+  &:hover {
+    &.footer__icon > {
+      .social__icon.footer__icon {
+        fill: $color-bgthird;
+      }
+    }
+  }
+}
+
+.social__icon.footer__icon {
+  fill: $color-bgthird;
+}
+
+.footer__paragraph {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer__mailing {
+  margin-left: 93px;
+}
+
+.footer__form {
+  display: flex;
+}
+
+.footer__input {
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+.footer__button {
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.footer__icon {
+  &_modal {
+    margin-left: 10px;
+    fill: $color-bgthird;
+  }
+}
