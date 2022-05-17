@@ -10,8 +10,11 @@
   text-transform: uppercase;
   color: $color-first;
   margin-bottom: 10px;
-  // text-align: left;
+
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .about-us__paragraph {
   font-size: 14px;
@@ -22,29 +25,36 @@
 }
 
 .about-us__list {
-  // display: flex;
-  // justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .about-us__item {
-  // margin-right: 30px;
-  // margin-bottom: 0;
   margin-bottom: 30px;
   &:last-child {
     margin: 0;
   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .about-us__icon {
-  // padding: 25px 100px;
   padding: 25px 190px;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-  // width: 270px;
+
   width: 450px;
   &_svg {
     width: 70px;
     height: 70px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 25px 100px;
+    width: 270px;
   }
 }

@@ -1,14 +1,17 @@
 .what-do-we-do__header,
 .team__header {
   font-weight: 700;
-  // font-size: 36px;
-  // line-height: 42px;
+
   font-size: 28px;
   line-height: 1.17px;
   letter-spacing: 0.03em;
   color: $color-first;
   text-align: center;
   margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .what-do-we-do {
@@ -16,8 +19,11 @@
 }
 
 .section.what-do-we-do {
-  // display: block;
   display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 94px;
+  }
 }
 
 .what-do-we-do__list {
