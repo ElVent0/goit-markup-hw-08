@@ -13,7 +13,8 @@ ul,
 input,
 textarea,
 fieldset,
-label {
+label,
+html {
   margin: 0;
   padding: 0;
 }
@@ -23,13 +24,15 @@ label {
 }
 
 .container {
-  max-width: 1200px;
+  // max-width: 1200px;
+  max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .section {
-  padding: 94px 0;
+  // padding: 94px 0;
+  padding: 60px 0;
 }
 
 .list {

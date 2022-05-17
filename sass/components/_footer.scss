@@ -1,32 +1,43 @@
 .footer {
   background-color: $color-bgsecond;
-  height: 252px;
+  height: 603px;
+  // height: 252px;
   padding-top: 60px;
+  // padding-bottom: 0;
+  padding-bottom: 60px;
 }
 
 .footer__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  // font-size: 26px;
+  // line-height: 1.19;
+  font-size: 28px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: $color-chosen;
   text-decoration: none;
   margin-bottom: 20px;
-}
-
-.footer__address {
-  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .footer__item {
-  margin-bottom: 9px;
+  // margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer__item {
   &:last-child {
     margin: 0;
   }
+}
+
+.footer__social {
+  // margin-bottom: 0px;
+  margin-bottom: 60px;
 }
 
 .contacts {
@@ -36,6 +47,13 @@
   letter-spacing: 0.03em;
   color: $color-bgthird;
   text-decoration: none;
+}
+
+.footer__link.contacts {
+  // display: тут ніби щось інше для пк;
+  // text-align: left;
+  display: block;
+  text-align: center;
 }
 
 .contacts.color {
@@ -56,11 +74,14 @@
 }
 
 .footer__container {
-  display: flex;
+  // display: flex;
+  display: block;
 }
 
 .footer__addresses {
-  margin-right: 70px;
+  // margin-right: 70px;
+  // margin-bottom: 0;
+  margin-bottom: 60px;
 }
 
 .footer__join {
@@ -70,6 +91,8 @@
   text-transform: uppercase;
   color: $color-bgthird;
   margin-bottom: 20px;
+  // text-align: left;
+  text-align: center;
 }
 
 .social__list_icon.footer__list_icon {
@@ -110,19 +133,25 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  // text-align: left;
+  text-align: center;
 }
 
 .footer__mailing {
-  margin-left: 93px;
+  // margin-left: 93px;
+  margin-left: 0;
 }
 
 .footer__form {
-  display: flex;
+  // display: flex;
+  display: block;
 }
 
 .footer__input {
-  margin-right: 12px;
-  width: 358px;
+  // margin-right: 12px;
+  margin-bottom: 20px;
+  // width: 358px;
+  width: 450px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -162,6 +191,8 @@
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .footer__icon {
