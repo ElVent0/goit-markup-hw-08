@@ -11,7 +11,7 @@
   color: $color-first;
   margin-bottom: 10px;
   text-align: center;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     text-align: left;
   }
 }
@@ -24,7 +24,10 @@
 }
 
 .about-us__list {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
   }
@@ -34,6 +37,9 @@
   margin-bottom: 30px;
   &:last-child {
     margin: 0;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    max-width: 354px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 30px;
@@ -55,7 +61,9 @@
       height: 70px;
     }
   }
-
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
   @media screen and (min-width: 1200px) {
     width: 270px;
   }

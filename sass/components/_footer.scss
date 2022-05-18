@@ -85,13 +85,18 @@
 
 .footer__container {
   display: block;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 .footer__addresses {
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-right: 165px;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
     margin-bottom: 0;
@@ -184,6 +189,8 @@
   line-height: 1.25;
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;

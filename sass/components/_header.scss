@@ -5,15 +5,14 @@
 .header__content {
   display: flex;
   align-items: center;
-
   height: 60px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     height: 80px;
   }
 }
 
 .header__nav {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 }
@@ -29,6 +28,9 @@
   margin-right: auto;
   display: flex;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
   @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
@@ -38,6 +40,9 @@
 
 .header__list {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
   @media screen and (min-width: 1200px) {
     font-weight: 500;
     font-size: 14px;
@@ -49,25 +54,36 @@
 }
 
 .header__list {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     &_end {
+      display: block;
       margin-left: auto;
     }
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
 .header__item {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    display: block;
+    align-items: center;
     margin-left: 50px;
     padding: 32px 0;
-    display: flex;
-    align-items: center;
+  }
+}
+
+.header__list_end .header__item {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-left: 0;
+    padding: 0;
   }
 }
 
 .header__item {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     &:first-child {
       margin: 0;
     }
@@ -76,7 +92,7 @@
 
 .header__navigation {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     color: $color-first;
     text-decoration: none;
     padding: 32px 0;
@@ -86,7 +102,7 @@
 }
 
 .header__navigation {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     &_blue {
       color: $color-chosen;
       position: relative;
@@ -95,7 +111,7 @@
 }
 
 .header__navigation {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     &_blue {
       &::after {
         content: "";
@@ -112,7 +128,7 @@
 }
 
 .header__navigation {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     &:hover,
     &:focus {
       color: $color-chosen;
@@ -122,7 +138,7 @@
 
 .contacts {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -131,7 +147,8 @@
 
 .header__icon {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    display: block;
     margin-right: 10px;
     fill: #757575;
     .contacts:focus > &,
@@ -139,5 +156,6 @@
       fill: $color-chosen;
     }
   }
+
   display: block;
 }
