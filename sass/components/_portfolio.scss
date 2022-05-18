@@ -4,11 +4,12 @@
     margin-bottom: 0;
   }
   &_top {
-    margin-right: 8px;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-bottom: 7.5px;
+    margin-top: 7.5px;
 
-    margin-bottom: 15px;
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
+    @media screen and (min-width: 480px) {
     }
     @media screen and (min-width: 1200px) {
       margin-bottom: 0;
@@ -34,10 +35,9 @@
 
     justify-content: left;
 
-    margin-bottom: 40px;
-    &:last-child {
-      margin-right: 0;
-    }
+    margin: -7.5px -4px;
+    margin-bottom: 32.5px;
+
     @media screen and (min-width: 1200px) {
       justify-content: center;
       margin-bottom: 50px;
@@ -75,7 +75,6 @@
 
 .thumb {
   width: 100%;
-  height: 294px;
   overflow: hidden;
   position: relative;
 }
@@ -104,8 +103,11 @@
 }
 
 .portfolio__image {
-  width: 450px;
-  height: 294px;
+  width: 100%;
+  height: auto;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
   @media screen and (min-width: 1200px) {
     width: 370px;
   }

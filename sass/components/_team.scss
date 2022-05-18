@@ -46,8 +46,11 @@
 }
 
 .team__image {
-  width: 450px;
-  height: 460px;
+  height: auto;
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
   @media screen and (min-width: 1200px) {
     width: 270px;
     height: 260px;

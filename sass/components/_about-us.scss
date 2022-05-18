@@ -10,7 +10,6 @@
   text-transform: uppercase;
   color: $color-first;
   margin-bottom: 10px;
-
   text-align: center;
   @media screen and (min-width: 1200px) {
     text-align: left;
@@ -43,18 +42,21 @@
 }
 
 .about-us__icon {
-  padding: 25px 190px;
+  display: flex;
+  justify-content: center;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-
-  width: 450px;
-  &_svg {
-    width: 70px;
-    height: 70px;
+  padding: 25px 0;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    &_svg {
+      width: 70px;
+      height: 70px;
+    }
   }
+
   @media screen and (min-width: 1200px) {
-    padding: 25px 100px;
     width: 270px;
   }
 }
