@@ -26,6 +26,60 @@
     <header class="header">
       <div class="container">
         <div class="header__content">
+          <div class="header__menu is-open" data-menu>
+            <ul class="header__list-menu list">
+              <li class="header__item-menu">
+                <a
+                  class="header__navigation-menu header__navigation_blue"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="header__item-menu">
+                <a class="header__navigation-menu" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header__item-menu">
+                <a class="header__navigation-menu" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__list-menu list header__list_end">
+            <li class="header__item-menu">
+              <a href="tel:+380961111111" class="contacts-menu_first color">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="header__item-menu">
+              <a href="mailto:info@devstudio.com" class="contacts-menu_last color">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="header__list-menu_bottom list header__list_end">
+            <li class="header__item-menu_bottom">
+              <a href="" class="social__menu color">
+                Instagram</a
+              >
+            </li>
+            <li class="header__item-menu_bottom">
+              <a href="" class="social__menu color">
+                twitter</a
+              >
+            </li>
+            <li class="header__item-menu_bottom">
+              <a href="" class="social__menu color">
+                Facebook</a
+              >
+            </li>
+            <li class="header__item-menu_bottom">
+              <a href="" class="social__menu color">
+                LinkedIn</a
+              >
+            </li>
+          </ul>
+          </div>
           <nav class="header__nav">
             <a href="./index.html" class="header__logo" lang="en"
               >Web<span class="color-black">Studio</span></a
@@ -66,6 +120,23 @@
               >
             </li>
           </ul>
+          <button
+            type="button"
+            class="header__burger is-open"
+            data-menu-button
+            aria-expanded="false"
+          >
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use
+                href="./images/icons.svg#burgeron"
+                class="header__burger-icon_first"
+              ></use>
+              <use
+                href="./images/icons.svg#burgeroff"
+                class="header__burger-icon_second"
+              ></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -526,5 +597,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
