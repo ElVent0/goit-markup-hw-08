@@ -228,7 +228,7 @@ html {
   }
 }
 .header__list-menu {
-  margin-bottom: 302px;
+  margin-bottom: calc(100vh - 495px);
   padding: 0 40px;
 }
 .header__list-menu:nth-child(2) {

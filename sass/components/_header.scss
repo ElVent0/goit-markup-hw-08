@@ -114,7 +114,7 @@
     padding: 0;
   }
   &-menu {
-    margin-bottom: 302px;
+    margin-bottom: calc(100vh - 495px);
     &:nth-child(2) {
       margin-bottom: 64px;
     }
