@@ -121,6 +121,10 @@
     &_bottom {
       display: flex;
       padding: 0 40px;
+      @media screen and (max-width: 480px) {
+        flex-wrap: wrap;
+        max-width: 300px;
+      }
     }
     padding: 0 40px;
   }
@@ -149,15 +153,23 @@
   &-menu {
     margin-bottom: 32px;
     &_bottom {
-      padding-left: 10px;
+      margin-left: 10px;
       padding-right: 10px;
       border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
     &_bottom:first-child {
-      padding-left: 0;
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+    &_bottom:nth-child(2) {
+      border: none;
+      margin-bottom: 10px;
+    }
+    &_bottom:nth-child(3) {
+      margin-left: 0;
     }
     &_bottom:last-child {
-      padding-right: 0;
+      margin-right: 0;
       border: none;
     }
   }
@@ -259,6 +271,9 @@
       letter-spacing: 0.02em;
       color: $color-chosen;
       text-decoration: none;
+      @media screen and (max-width: 480px) {
+        font-size: 24px;
+      }
     }
     &_last {
       font-weight: 500;

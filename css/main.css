@@ -240,6 +240,13 @@ html {
   display: flex;
   padding: 0 40px;
 }
+@media screen and (max-width: 480px) {
+  .header__list-menu_bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 300px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .header__list_end {
@@ -272,15 +279,23 @@ html {
   margin-bottom: 32px;
 }
 .header__item-menu_bottom {
-  padding-left: 10px;
+  margin-left: 10px;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .header__item-menu_bottom:first-child {
-  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+.header__item-menu_bottom:nth-child(2) {
+  border: none;
+  margin-bottom: 10px;
+}
+.header__item-menu_bottom:nth-child(3) {
+  margin-left: 0;
 }
 .header__item-menu_bottom:last-child {
-  padding-right: 0;
+  margin-right: 0;
   border: none;
 }
 
@@ -381,6 +396,11 @@ html {
   letter-spacing: 0.02em;
   color: #2196f3;
   text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  .contacts-menu_first {
+    font-size: 24px;
+  }
 }
 .contacts-menu_last {
   font-weight: 500;
@@ -731,6 +751,12 @@ html {
   background-position: center;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/2x/bg1-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/2x/bg1-mobile@2x.jpg);
+  }
+}
 @media screen and (min-width: 480px) {
   .overlay {
     max-width: 480px;
@@ -743,12 +769,24 @@ html {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg1-tablet.jpg);
   }
 }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/2x/bg1-mobile-tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/2x/bg1-mobile-tablet@2x.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .overlay {
     height: 600px;
     max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg1.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg1.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/2x/bg1@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/2x/bg1@2x.jpg);
   }
 }
 
@@ -1365,7 +1403,7 @@ html {
 }
 
 .portfolio__image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 @media screen and (min-width: 480px) {
@@ -1451,8 +1489,11 @@ html {
   height: 100%;
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  -webkit-transition: visibility 0.5s;
+  transition: visibility 0.5s;
+  z-index: 3000;
 }
 .backdrop.is-hidden .modal {
   -webkit-transform: scale(0.01);
